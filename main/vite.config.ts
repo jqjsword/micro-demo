@@ -27,8 +27,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        // target: "http://www.bing.com",
-        target: "http://192.168.1.171:8050/",
+        target: "http://www.bing.com",
+
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, "/"),
       },
